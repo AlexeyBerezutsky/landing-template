@@ -1,0 +1,44 @@
+{
+  "name": "landing-template",
+  "version": "1.0.1",
+  "description": "Landing Page template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexeyBerezutsky/landing-template"
+  },
+ 
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "lint": "next lint",
+    "export-local": "set NEXT_PUBLIC_BASE_PATH = / && next build && next export",
+    "start-static": "npm run export-local && http-server out -p=3001"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "next": "12.2.5",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hotjar": "^5.1.0",
+    "react-responsive": "^9.0.0-beta.10",
+    "react-tooltip": "^4.2.21"
+  },
+  "devDependencies": {
+    "eslint": "8.23.0",
+    "eslint-config-next": "^12.2.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "file-loader": "^6.2.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
+    "prettier": "^2.7.1",
+    "sass": "^1.54.8",
+    "responsive-loader": "3.1.1",
+    "sharp": "^0.31.0"
+  }
+}

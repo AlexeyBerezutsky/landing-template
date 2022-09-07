@@ -1,0 +1,93 @@
+.pros {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.pros__inner {
+    padding-top: 80px;
+}
+
+.pros__button {
+    margin-top: 24px;
+    Width: 250px;
+    height: 48px;
+    order: 3;
+}
+
+.pros__item:last-of-type {
+    padding-top: 28px;
+}
+
+.pros__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.pros__text {
+    font-size: 18px;
+    line-height: 28px;
+    color: $dark-silver;
+    margin-top: 16px;
+}
+
+.pros__image {
+    margin-top: 18px;
+    display: block;
+    margin-bottom: 16px;
+    max-width: 100%;
+    height: fit-content;
+    align-self: center;
+}
+
+@media (min-width: $desktop-width) {
+
+    .pros {
+        padding-top: 156px;
+        padding-bottom: 158px;
+    }
+
+    .pros__item:last-of-type {
+        padding-top: 0;
+    }
+
+    .pros__image {
+        margin: 0;
+    }
+
+    .pros__title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 44px;
+        color: $gunmetal;
+        padding-right: 46px;
+        text-align: initial;
+    }
+
+    .pros__button {
+        order: initial;
+    }
+
+    .pros__text {
+        margin-top: 48px;
+        padding-right: 80px;
+    }
+
+    .pros__row {
+        padding-top: 136px;
+    }
+
+    .pros__inner {
+        margin-left: 85px;
+        padding-top: 0;
+    }
+
+    .pros__inner .pros__title {
+        padding-right: 8px;
+    }
+
+    .pros__inner .pros__text {
+        padding-right: 0;
+    }
+}

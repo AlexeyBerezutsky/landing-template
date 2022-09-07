@@ -1,0 +1,43 @@
+.get-started {
+    background: $brandeis-blue;
+    padding: 42px 4px;
+    color: white;
+    position: relative;
+}
+
+.get-started__title {
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: white;
+}
+
+.get-started__button {
+    background-color: white;
+    color: $brandeis-blue;
+    width: 250px;
+    height: 48px;
+    padding-top: 1px;
+
+    &:hover {
+        color: white;
+        background-color: $brandeis-blue;
+        border: 2px solid white;
+    }
+}
+
+.inner-page .get-started {
+    margin-top: 104px;
+}
+
+@media (min-width: $desktop-width) {
+
+    .get-started {
+        height: 128px;
+        width: 928px;
+        margin: 0 auto;
+        transform: translateY(-50%);
+    }
+}

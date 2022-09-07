@@ -1,0 +1,129 @@
+.header {
+    z-index: 13;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 16px 4px;
+    grid-area: header;
+}
+
+.header__navigation-item {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 64px;
+}
+
+.header__navigation-item--active {
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
+}
+
+.header__navigation-link {
+    color: white;
+    text-decoration: none;
+}
+
+.header.header-sticky {
+    position: fixed;
+    background-color: rgba(11, 38, 99, 0.6);
+    animation: header-appear 0.4s ease-in-out both;
+}
+
+.header__navigation {
+    display: none;
+    padding-top: 10px;
+}
+
+.header__side-navigation {
+    display: none;
+}
+
+.header__logo {
+    fill: white;
+    display: block;
+}
+
+.header__menu {
+    all: unset;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.menu-toggle {
+    all: unset;
+}
+
+.menu-toggle--close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.menu-toggle__image {
+    display: block;
+}
+
+// header inner page
+
+.header-inner-page {
+    height: 56px;
+    background: $brandeis-blue;
+    flex: 0 0 auto;
+    position: initial;
+}
+
+@media (min-width: $desktop-width) {
+
+    .header {
+        z-index: 30;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 8px;
+        padding-bottom: 4px;
+    }
+
+    .header__side-navigation {
+        display: block;
+    }
+
+    .header__navigation {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 10px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__navigation-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header__navigation-item {
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: 32px;
+        cursor: pointer;
+    }
+
+    .header__navigation-item--active {
+        border-bottom: 2px solid white;
+        padding-bottom: 4px;
+    }
+
+    .header__navigation-link {
+        color: white;
+        text-decoration: none;
+    }
+}

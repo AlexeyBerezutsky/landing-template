@@ -1,0 +1,62 @@
+.business {
+    padding: 80px 4px;
+    color: white;
+    background-color: $brandeis-blue;
+}
+
+.business__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.business__text {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 69px;
+    opacity: 0.8;
+}
+
+.business__image {
+    width: 344px;
+    height: 206px;
+    margin-top: 42px;
+    margin-bottom: -100px;
+}
+
+@media (min-width: $tablet-width) {
+
+    .business__image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: $desktop-width) {
+
+    .business__title {
+        text-align: left;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 44px;
+        color: white;
+        margin-left: 164px;
+        margin-right: 160px;
+    }
+
+    .business__text {
+        text-align: left;
+        color: white;
+        margin-top: 34px;
+        margin-left: 164px;
+        margin-right: 191px;
+    }
+
+    .business__image {
+        margin-top: 69px;
+        width: 100%;
+    }
+}

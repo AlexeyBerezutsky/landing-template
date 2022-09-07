@@ -1,0 +1,26 @@
+    <svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+        <style type="text/css" >
+            <![CDATA[
+                svg {
+                    border-radius: 50%;
+                }
+
+                #scrolltop-bg {
+                    fill: #4c4545;
+                }
+
+                path {
+                   transition: all 0.1s;
+                }
+
+                #scrolltop-arrow {
+                    transform: scale(0.66);
+                    transform-origin: center;
+                    fill: white;
+                    transition: all 0.1s;
+                }
+            ]]>
+        </style>
+        <path id="scrolltop-bg" d="M0 0h48v48h-48z"></path>
+        <path id="scrolltop-arrow" d="M14.83 30.83l9.17-9.17 9.17 9.17 2.83-2.83-12-12-12 12z"></path>
+    </svg>

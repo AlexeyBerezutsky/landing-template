@@ -1,0 +1,53 @@
+.jobs {
+    padding: 80px 4px;
+    background-color: rgba($bright-gray, 0.5);
+}
+
+.jobs__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: $gunmetal;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.jobs__text {
+    font-size: 18px;
+    line-height: 28px;
+    color: $gunmetal;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.jobs__button {
+    margin-top: 24px;
+    text-decoration: none;
+    width: 124px;
+    height: 48px;
+}
+
+@media (min-width: $tablet-width) {
+
+    .jobs__title {
+        text-align: unset;
+    }
+
+    .jobs__text {
+        text-align: unset;
+        margin-top: 50px;
+        opacity: 0.8;
+    }
+}
+
+@media (min-width: $desktop-width) {
+
+    .jobs {
+        padding: 134px 0;
+    }
+
+    .jobs__title {
+        text-align: left;
+        margin-top: 16px;
+    }
+}

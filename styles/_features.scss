@@ -1,0 +1,78 @@
+.features {
+    padding-top: 80px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.features__list-item--collaborate {
+    background-image: url("/img/collaborate.svg");
+}
+
+.features__list-item--notebooks {
+    background-image: url("/img/note.svg");
+}
+
+.features__list-item--community {
+    background-image: url("/img/community.svg");
+}
+
+.features__heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 49px;
+    color: $gunmetal;
+}
+
+.features__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    color: $gunmetal;
+}
+
+.features__text {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color:  $dark-silver;
+}
+
+.features__list-item {
+    margin-top: 50px;
+    padding-top: 50px;
+    text-align: center;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: $desktop-width) {
+
+    .features {
+        padding-top: 136px;
+    }
+
+    .features__heading {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .features__text {
+        margin-top: 20px;
+    }
+
+    .features__list-item {
+        width: 288px;
+        margin-top: 96px;
+        padding-top: 80px;
+    }
+
+    .features__list-item--notebooks {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

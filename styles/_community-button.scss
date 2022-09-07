@@ -1,0 +1,12 @@
+.community-button {
+    width: 128px;
+    height: 40px;
+    padding: 0 4px;
+}
+
+@media (min-width: $desktop-width) {
+
+    .community-button {
+        margin-left: 21px;
+    }
+}

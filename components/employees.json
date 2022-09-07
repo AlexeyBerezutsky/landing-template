@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Alexey Alexey 1",
+        "photo": "https://via.placeholder.com/120x120.png",
+        "department": "business"
+    },
+    {
+        "name": "Alexey Alexey 2",
+        "photo": "https://via.placeholder.com/120x120.png",
+        "department": "business"
+    },
+    {
+        "name": "Alexey Alexey 3",
+        "photo": "https://via.placeholder.com/120x120.png",
+        "department": "business"
+    },
+    {
+        "name": "Berezutsky Berezutsky 1",
+        "photo": "https://via.placeholder.com/120x120.png",
+        "department": "development"
+    },
+    {
+        "name": "Berezutsky Berezutsky 2",
+        "photo": "https://via.placeholder.com/120x120.png",
+        "department": "development"
+    }
+]

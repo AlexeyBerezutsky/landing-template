@@ -1,0 +1,89 @@
+@import "variables";
+@import "global";
+
+// buttons
+@import "action-button";
+@import "community-button";
+@import "login-button";
+@import "scroll-top-button";
+
+// components (alphabetically sorted)
+@import "address";
+@import "business";
+@import "cite";
+@import "customers";
+@import "employee-info";
+@import "features";
+@import "footer";
+@import "get-started";
+@import "header";
+@import "inner-page";
+@import "intro";
+@import "jobs";
+@import "portfolio";
+@import "pros";
+@import "side-menu";
+@import "socials";
+@import "switch-form";
+@import "team";
+
+.welcome__heading {
+    margin-top: 56px;
+}
+
+.welcome__image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 32px;
+    display: block;
+}
+
+@media (min-width: $desktop-width) {
+
+    .header__container,
+    .intro__container,
+    .pros__container,
+    .features__container,
+    .business__container,
+    .team__container,
+    .jobs__container,
+    .get-started__container,
+    .customers__container,
+    .footer__container,
+    .inner-page__container,
+    .portfolio__container {
+        width: 952px !important;
+    }
+
+    .container {
+        max-width: 952px;
+    }
+
+    .about-page {
+        .inner-page__container {
+            &:first-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    .welcome__heading {
+        margin-top: 104px;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 56px;
+        padding-right: 200px;
+    }
+
+    .welcome__image {
+        margin-top: 32px;
+    }
+
+    .welcome-page .secondary-heading--date {
+        margin-top: 60px;
+    }
+
+    .welcome-page .body-text {
+        margin-top: 16px;
+    }
+}

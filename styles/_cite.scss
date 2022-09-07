@@ -1,0 +1,92 @@
+.cite {
+    padding: 80px 4px;
+}
+
+.cite-inner {
+    position: relative;
+
+    &::before {
+        display: none;
+        content: "";
+        position: absolute;
+        background-image: url("/img/cite.svg");
+        background-repeat: no-repeat;
+        width: 82px;
+        height: 64px;
+        top: 0;
+        left: -100px;
+    }
+}
+
+.cite__text {
+    font-size: 19px;
+    line-height: 29px;
+    color: $gunmetal;
+}
+
+.cite__author-container {
+    display: flex;
+    margin-top: 32px;
+}
+
+.cite__author {
+    margin-top: 30px;
+}
+
+.cite__author-info {
+    padding-top: 4px;
+}
+
+.cite__image {
+    display: block;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.cite__name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $brandeis-blue;
+}
+
+.cite__sub-text {
+    font-size: 14px;
+    line-height: 21px;
+    color:  $dark-silver;
+}
+
+@media (min-width: $tablet-width) {
+
+    .cite-inner::before {
+        display: block;
+    }
+}
+
+@media (min-width: $desktop-width) {
+
+    .cite {
+        padding: 104px 4px 168px;
+
+        &::before {
+            width: 82px;
+            height: 64px;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .cite__author {
+        margin-top: 36px;
+    }
+
+    .cite-inner {
+        width: 899px;
+        padding-left: 130px;
+
+        &::before {
+            left: 0;
+        }
+    }
+}

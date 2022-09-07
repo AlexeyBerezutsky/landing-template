@@ -1,0 +1,32 @@
+.team {
+    padding: 80px 4px;
+}
+
+.team__title {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: $gunmetal;
+}
+
+.team__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 43px;
+    color: $gunmetal;
+}
+
+@media (min-width: $desktop-width) {
+
+    .team {
+        padding-bottom: 128px;
+        padding-top: 136px;
+    }
+
+    .team__title {
+        font-weight: bold;
+        font-size: 48px;
+        color: $brandeis-blue;
+    }
+}

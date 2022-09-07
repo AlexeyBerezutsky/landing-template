@@ -1,0 +1,23 @@
+.login-button {
+    width: 103px;
+    height: 40px;
+}
+
+.header-inner-page .login-button {
+    background: white;
+    color: $brandeis-blue;
+}
+
+@media (min-width: $tablet-width) {
+
+    .login-button {
+        display: flex;
+    }
+}
+
+@media (min-width: $desktop-width) {
+
+    .login-button {
+        margin-left: 21px;
+    }
+}

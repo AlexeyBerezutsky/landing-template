@@ -1,0 +1,64 @@
+.inner-page {
+    flex: 1 0 auto;
+}
+
+.inner-page__container {
+    padding-bottom: 100px;
+}
+
+.inner-page__banner {
+    margin-top: 24px;
+    position: relative;
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    filter: hue-rotate(38deg);
+}
+
+.inner-page__banner::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 128px;
+    height: 128px;
+    right: 0;
+    background-image: url("/img/logo-butterfly.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+.inner-page__list {
+    margin: 0;
+    margin-top: 16px;
+}
+
+.inner-page__list-item {
+    padding-left: 48px;
+    font-size: 16px;
+    line-height: 40px;
+    color:  $dark-silver;
+    position: relative;
+}
+
+.inner-page__list-item::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 2px;
+    background: $gunmetal;
+    top: 50%;
+    left: 0;
+}
+
+.inner-page__address {
+    margin-top: 22px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: $dark-silver;
+    font-style: normal;
+}

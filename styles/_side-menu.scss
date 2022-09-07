@@ -1,0 +1,34 @@
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    background: white;
+    padding: 32px 0;
+}
+
+.side-menu .header__navigation {
+    display: block;
+}
+
+.side-menu .header__navigation-link {
+    color: $gunmetal;
+}
+
+.side-menu .header__navigation-item {
+    padding-bottom: 16px;
+    margin-bottom: 2px;
+}
+
+@media (min-width: $desktop-width) {
+
+    .side-menu {
+        display: none;
+    }
+
+    .side-menu .header__navigation {
+        display: none;
+    }
+}

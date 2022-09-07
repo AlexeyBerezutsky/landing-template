@@ -1,0 +1,28 @@
+.socials {
+    display: flex;
+    justify-content: flex-start;
+    padding: 14px 0;
+}
+
+.socials__item {
+    display: flex;
+    height: 24px;
+    margin-right: 16px;
+    cursor: pointer;
+
+    &:hover svg path {
+        stroke: $brandeis-blue;
+    }
+}
+
+@media (min-width: $desktop-width) {
+
+    .socials {
+        justify-content: flex-end;
+    }
+
+    .socials__item {
+        margin-left: 16px;
+        margin-right: 0;
+    }
+}
