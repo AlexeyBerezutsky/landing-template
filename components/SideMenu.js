@@ -1,8 +1,8 @@
 import Nav from './Nav';
-import StaticImage from './StaticImage';
 import {useRouter} from 'next/router';
 import {useAuth} from '../hooks/useAuth';
 import {useBigDevice} from '../hooks/MediaQueries';
+import Image from 'next/image';
 
 export default function SideMenu({close}) {
     const {pathname} = useRouter();
@@ -12,7 +12,7 @@ export default function SideMenu({close}) {
     return (
         <div onClick={close} className="side-menu">
             <button className="menu-toggle menu-toggle--close">
-                <StaticImage src="/img/x-mark-thin.svg" height={24} width={24} alt="close-button" />
+                <Image src="/img/x-mark-thin.svg" height={24} width={24} alt="close-button" />
             </button>
             <Nav user={user} pathname={pathname} isBig={isBig} />
         </div>

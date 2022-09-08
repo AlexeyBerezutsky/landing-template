@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image';
 import {useBigDevice} from '../hooks/MediaQueries';
 
 const big = 'https://via.placeholder.com/2000x800.png'; //require(`${process.env.NEXT_PUBLIC_BASE_PATH}/img/intro.png/?resize&sizes[]=1200`);
@@ -10,7 +11,7 @@ export default function IntroImage() {
     return (
         <picture>
             {/* <source srcSet={isBig ? big.srcSet : mobile.srcSet} sizes="928px" media="(min-width: 992px)" /> */}
-            <img src={isBig ? big : mobile} className="intro__image" alt="" />
+            <Image src={isBig ? big : mobile} className="intro__image" alt="" width={2000} height={800} />
         </picture>
     );
 }

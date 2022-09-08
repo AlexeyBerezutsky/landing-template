@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import StaticImage from './StaticImage';
+import Image from 'next/image';
 
 function Careers({ className, id }) {
     return (
@@ -8,7 +8,7 @@ function Careers({ className, id }) {
             <div className="container-fluid jobs__container">
                 <div className="row">
                     <div className="col-12 col-lg-6 col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start">
-                        <img
+                        <Image
                             src="https://via.placeholder.com/291x320.png"
                             alt="logo image"
                             className="jobs-image"

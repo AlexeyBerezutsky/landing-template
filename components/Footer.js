@@ -1,7 +1,7 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useAuth } from '../hooks/useAuth';
 import LinkWithAuth from './LinkWithAuth';
-import StaticImage from './StaticImage';
 
 export default function Footer() {
     const { user } = useAuth();
@@ -31,7 +31,7 @@ export default function Footer() {
             <div className="container-fluid footer__container">
                 <div className="row footer__top-row">
                     <div className="col-sm-12 col-lg-3">
-                        <StaticImage className="footer__logo" src="/logo.png" alt="logo" height={24} width={142} />
+                        <Image className="footer__logo" src="/logo.png" alt="logo" width={64} height={64} />
                     </div>
                     <div className="col-sm-12 col-lg-9">
                         <nav className="footer__navigation">
@@ -70,14 +70,14 @@ export default function Footer() {
                             <li className="socials__item">
                                 <Link passHref href="https://linkedin.com/company/test">
                                     <a className="socials__link">
-                                        <StaticImage src="/img/linkedin.svg" alt="linkedin" height={24} width={24} />
+                                        <Image src="/img/linkedin.svg" alt="linkedin" height={24} width={24} />
                                     </a>
                                 </Link>
                             </li>
                             <li className="socials__item">
                                 <Link passHref href="https://twitter.com/test?lang=en">
                                     <a className="socials__link">
-                                        <StaticImage src="/img/twitter.svg" alt="twitter" height={24} width={24} />
+                                        <Image src="/img/twitter.svg" alt="twitter" height={24} width={24} />
                                     </a>
                                 </Link>
                             </li>

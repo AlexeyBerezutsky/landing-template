@@ -1,4 +1,4 @@
-import StaticImage from './StaticImage';
+import Image from "next/image";
 
 export default function ScrollToTop({scrollTopVisible}) {
     const classNames = ['scroll-top'];
@@ -13,7 +13,7 @@ export default function ScrollToTop({scrollTopVisible}) {
 
     return (
         <a onClick={handleClick} role="button" aria-label="Scroll to top" className={classNames.join(' ')}>
-            <StaticImage src={'/img/chevron-top.svg'} alt="" height={48} width={48} />
+            <Image src={'/img/chevron-top.svg'} alt="" height={48} width={48} />
         </a>
     );
 }

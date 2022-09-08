@@ -1,6 +1,6 @@
+import Image from 'next/image';
 import React from 'react';
 import LinkWithAuth from './LinkWithAuth';
-import StaticImage from './StaticImage';
 
 function Features({ stickyHeaderRef, className, id }) {
     return (
@@ -62,7 +62,7 @@ function Features({ stickyHeaderRef, className, id }) {
                             </div>
                         </div>
                         <div className="col-12 col-lg-6 col-sm-6 d-flex justify-content-center justify-content-lg-end">
-                            <img
+                            <Image
                                 className="pros__image"
                                 src="https://via.placeholder.com/449x336.png"
                                 alt="illustration"
@@ -93,7 +93,7 @@ function Features({ stickyHeaderRef, className, id }) {
                             </div>
                         </div>
                         <div className="col-12 col-sm-6 col-lg-6 d-flex d-lg-flex justify-content-center justify-content-lg-start">
-                            <img
+                            <Image
                                 className="pros__image"
                                 src="https://via.placeholder.com/448x364.png"
                                 alt="illustration"

@@ -1,5 +1,5 @@
+import Image from 'next/image';
 import React from 'react';
-import StaticImage from './StaticImage';
 
 function Business({ className, id }) {
     return (
@@ -13,7 +13,7 @@ function Business({ className, id }) {
                             Etiam varius, mauris ac pellentesque vehicula, ante felis efficitur ante, eu dapibus purus nunc nec diam.
                             Morbi congue ut diam nec varius. Phasellus vitae erat at sem tincidunt pellentesque. Donec in urna eu odio vestibulum luctus.
                         </p>
-                        <img
+                        <Image
                             className="business__image"
                             src="https://via.placeholder.com/927x555.png"
                             alt="illustration"

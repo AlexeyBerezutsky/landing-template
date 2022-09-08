@@ -1,5 +1,5 @@
 import { useAuth } from '../hooks/useAuth';
-import StaticImage from '../components/StaticImage';
+import Image from 'next/image';
 
 export default function Welcome() {
     const { user } = useAuth();
@@ -14,7 +14,7 @@ export default function Welcome() {
                         <p className="body-text">
                             Aliquam a ligula ut felis rutrum ornare. Duis tincidunt nisi in nisl interdum venenatis. Aliquam mollis sem eu quam molestie, sed pellentesque libero tincidunt.
                         </p>
-                        <img
+                        <Image
                             src="https://via.placeholder.com/928x370.png"    
                             alt="welcome-illustration"
                             width={928}

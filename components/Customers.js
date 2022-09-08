@@ -1,5 +1,5 @@
+import Image from 'next/image';
 import React from 'react';
-import StaticImage from './StaticImage';
 
 function Customers({ className }) {
     return (
@@ -14,7 +14,7 @@ function Customers({ className }) {
                     <div className="col-12">
                         <ul className="customers__list">
                             <li className="customers__item">
-                                <img
+                                <Image
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}
@@ -23,7 +23,7 @@ function Customers({ className }) {
                                 />
                             </li>
                             <li className="customers__item">
-                                <img
+                                <Image
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}
@@ -32,7 +32,7 @@ function Customers({ className }) {
                                 />
                             </li>
                             <li className="customers__item">
-                                <img
+                                <Image
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}
@@ -41,7 +41,7 @@ function Customers({ className }) {
                                 />
                             </li>
                             <li className="customers__item">
-                                <img
+                                <Image
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}
@@ -51,7 +51,7 @@ function Customers({ className }) {
                             </li>
 
                             <li className="customers__item">
-                                <img
+                                <Image
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}
@@ -60,7 +60,7 @@ function Customers({ className }) {
                                 />
                             </li>
                             <li className="customers__item">
-                                <img
+                                <Image
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}
@@ -69,7 +69,7 @@ function Customers({ className }) {
                                 />
                             </li>
                             <li className="customers__item">
-                                <img
+                                <Image
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}
@@ -78,7 +78,7 @@ function Customers({ className }) {
                                 />
                             </li>
                             <li className="customers__item">
-                                <img
+                                <Image
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}

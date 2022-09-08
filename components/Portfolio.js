@@ -1,5 +1,5 @@
+import Image from 'next/image';
 import React from 'react';
-import StaticImage from './StaticImage';
 
 function Portfolio({ className, id }) {
     return (
@@ -10,7 +10,7 @@ function Portfolio({ className, id }) {
                         <h2 className="portfolio__title">Portfolio</h2>
                         <ul className="portfolio__list">
                             <li className="portfolio__item">
-                                <img
+                                <Image
                                     className="portfolio__image"
                                     src="https://via.placeholder.com/448x300.png"
                                     alt="Aliquam picture"
@@ -28,7 +28,7 @@ function Portfolio({ className, id }) {
                             </li>
 
                             <li className="portfolio__item">
-                                <img
+                                <Image
                                     className="portfolio__image"
                                     src="https://via.placeholder.com/448x300.png"
                                     alt="Bam picture"
@@ -46,7 +46,7 @@ function Portfolio({ className, id }) {
                             </li>
 
                             <li className="portfolio__item">
-                                <img
+                                <Image
                                     className="portfolio__image"
                                     src="https://via.placeholder.com/448x300.png"
                                     alt="Bam picture"
@@ -63,7 +63,7 @@ function Portfolio({ className, id }) {
                             </li>
 
                             <li className="portfolio__item">
-                                <img
+                                <Image
                                     className="portfolio__image"
                                     src="https://via.placeholder.com/448x300.png"
                                     alt="libero picture"

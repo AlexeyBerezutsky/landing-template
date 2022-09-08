@@ -3,7 +3,7 @@ import {useState} from 'react';
 import employees from './employees';
 import {filter, map} from 'lodash';
 import ReactTooltip from 'react-tooltip';
-import StaticImage from './StaticImage';
+import Image from 'next/image';
 
 const dev = 'development';
 const biz = 'business';
@@ -13,7 +13,7 @@ const withPhoto = (employee) => {
 
     return (
         <div data-tip={!hideName ? employee.name : ''} key={employee.name} className="employee-info">
-            <img
+            <Image
                 priority="true"
                 className="employee-info__photo"
                 height={88}

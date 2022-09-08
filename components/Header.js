@@ -4,7 +4,7 @@ import LinkWithAuth from './LinkWithAuth';
 import {useRouter} from 'next/router';
 import {useAuth} from '../hooks/useAuth';
 import {useBigDevice} from '../hooks/MediaQueries';
-import StaticImage from './StaticImage';
+import Image from 'next/image';
 
 export default function Header({isSticky, sideMenuOpen}) {
     const {pathname} = useRouter();
@@ -27,17 +27,17 @@ export default function Header({isSticky, sideMenuOpen}) {
                     <div className="col-12 col-lg-2 d-flex justify-content-between align-items-center">
                         <Link passHref href="/" className="header__link-top">
                             <a>
-                                <StaticImage
+                                <Image
                                     className="header__logo"
                                     src="/logo.png"
                                     alt="logo"
-                                    height={24}
-                                    width={142}
+                                    height={32}
+                                    width={32}
                                 />
                             </a>
                         </Link>
                         <button onClick={sideMenuOpen} className="header__menu menu-toggle">
-                            <StaticImage
+                            <Image
                                 src="/img/burger-button.svg"
                                 className="menu-toggle__image"
                                 height={24}
