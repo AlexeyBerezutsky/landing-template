@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useAuth } from '../hooks/useAuth';
+import {useAuth} from '../hooks/useAuth';
 import LinkWithAuth from './LinkWithAuth';
 
 export default function Footer() {
-    const { user } = useAuth();
+    const {user} = useAuth();
 
     return (
         //TODO: footer height is depens on 'get-started' height. Is it possible to remove the dependency?

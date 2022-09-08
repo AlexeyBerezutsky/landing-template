@@ -1,8 +1,8 @@
-import { useAuth } from '../hooks/useAuth';
+import {useAuth} from '../hooks/useAuth';
 import Image from 'next/image';
 
 export default function Welcome() {
-    const { user } = useAuth();
+    const {user} = useAuth();
     const nameChunk = user?.name ? `, ${user.name}!` : '';
     return (
         <main className="content inner-page">
@@ -12,10 +12,11 @@ export default function Welcome() {
                         <h1 className="main-heading">{`Welcome ${nameChunk}`}</h1>
                         <h2 className="secondary-heading">Nullam lacinia mauris et arcu volutpat!</h2>
                         <p className="body-text">
-                            Aliquam a ligula ut felis rutrum ornare. Duis tincidunt nisi in nisl interdum venenatis. Aliquam mollis sem eu quam molestie, sed pellentesque libero tincidunt.
+                            Aliquam a ligula ut felis rutrum ornare. Duis tincidunt nisi in nisl interdum venenatis.
+                            Aliquam mollis sem eu quam molestie, sed pellentesque libero tincidunt.
                         </p>
                         <Image
-                            src="https://via.placeholder.com/928x370.png"    
+                            src="https://via.placeholder.com/928x370.png"
                             alt="welcome-illustration"
                             width={928}
                             height={370}
@@ -25,11 +26,13 @@ export default function Welcome() {
                             Phasellus mollis arcu orci, id molestie leo varius et.
                         </p>
                         <p className="body-text">
-                            Nam placerat nisi tincidunt, hendrerit lectus sed, sollicitudin lacus. In molestie orci faucibus sem ullamcorper, ut varius turpis convallis.
+                            Nam placerat nisi tincidunt, hendrerit lectus sed, sollicitudin lacus. In molestie orci
+                            faucibus sem ullamcorper, ut varius turpis convallis.
                         </p>
                         <p className="body-text">
-                            Cras at scelerisque mi, vel blandit mauris. Nam hendrerit auctor lacus, vitae laoreet enim commodo eu. Donec sapien purus, dapibus nec vehicula ac, eleifend sit amet dui. Vestibulum fermentum est ipsum,
-                            eget sodales ante rhoncus vitae. Ut viverra non ipsum quis dapibus.
+                            Cras at scelerisque mi, vel blandit mauris. Nam hendrerit auctor lacus, vitae laoreet enim
+                            commodo eu. Donec sapien purus, dapibus nec vehicula ac, eleifend sit amet dui. Vestibulum
+                            fermentum est ipsum, eget sodales ante rhoncus vitae. Ut viverra non ipsum quis dapibus.
                             Vivamus viverra diam consequat lacus pellentesque, non congue tellus consectetur.
                         </p>
                     </div>

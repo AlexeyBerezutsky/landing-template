@@ -27,23 +27,25 @@ function Application({Component, pageProps}) {
     }, [router.events]);
     return (
         <>
-            <Head>
-                <title>Vestibulum Ultrices</title>
-                <Script
-                    async
-                    src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-                />
-                <Script
-                    dangerouslySetInnerHTML={{
-                        __html: `
+            <Script
+                id="googletagmanagerScript"
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+            />
+            <Script
+                id="googleAnalyticsScript"
+                dangerouslySetInnerHTML={{
+                    __html: `
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
                         gtag('js', new Date());
                         gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
                           page_path: window.location.pathname,
                         });`
-                    }}
-                />
+                }}
+            />
+            <Head>
+                <title>Vestibulum Ultrices</title>
             </Head>
             <ProvideAuth>
                 <RouteGuard>

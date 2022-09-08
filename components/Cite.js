@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Cite({ className }) {
+function Cite({className}) {
     return (
         <section className={className}>
             <div className="container-fluid cite__container">
@@ -8,11 +8,11 @@ function Cite({ className }) {
                     <div className="col-12 col-sm-8 col-lg-8 col-12 col-lg-8 d-flex justify-content-center">
                         <div className="cite-inner">
                             <p className="cite__text">
-                                Mauris bibendum lacus a commodo congue. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                                Curabitur sollicitudin purus ut ornare finibus. Aliquam quis rhoncus odio.
-                                Phasellus vehicula magna quam, nec egestas quam venenatis eu.
-                                Phasellus luctus accumsan justo, vel luctus est sodales eu.
-                                Praesent ut viverra sem, ut ultricies tortor. Sed vitae pellentesque ipsum. Donec sed congue nunc.
+                                Mauris bibendum lacus a commodo congue. Interdum et malesuada fames ac ante ipsum primis
+                                in faucibus. Curabitur sollicitudin purus ut ornare finibus. Aliquam quis rhoncus odio.
+                                Phasellus vehicula magna quam, nec egestas quam venenatis eu. Phasellus luctus accumsan
+                                justo, vel luctus est sodales eu. Praesent ut viverra sem, ut ultricies tortor. Sed
+                                vitae pellentesque ipsum. Donec sed congue nunc.
                             </p>
                             <div className="cite__author-container">
                                 <div className="cite__author-info">

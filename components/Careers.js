@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-function Careers({ className, id }) {
+function Careers({className, id}) {
     return (
         <section className={className} id={id}>
             <div className="container-fluid jobs__container">

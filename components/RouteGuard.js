@@ -1,8 +1,8 @@
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import {useRouter} from 'next/router';
+import {useEffect, useState} from 'react';
 import jwtDecode from '../helpers/jwtDecode';
-import { sleep } from '../helpers/tools';
-import { useAuth } from '../hooks/useAuth';
+import {sleep} from '../helpers/tools';
+import {useAuth} from '../hooks/useAuth';
 
 const protectedPaths = ['/welcome/', '/welcome'];
 const publicPaths = ['/', '/privacy-policy/', '/about/'];
@@ -11,14 +11,14 @@ const routeCheck = (url, isLoggein) => {
     const path = url.split(/[#,?]/)[0];
 
     if (publicPaths.includes(path) || (protectedPaths.includes(path) && isLoggein)) {
-        return path
+        return path;
     }
 
-    return '/'
-}
+    return '/';
+};
 
-export default function RouteGuard({ children }) {
-    const { user } = useAuth();
+export default function RouteGuard({children}) {
+    const {user} = useAuth();
     const router = useRouter();
     const [hide, setHide] = useState(true);
 
@@ -30,7 +30,7 @@ export default function RouteGuard({ children }) {
         setHide(false);
 
         const newRoute = routeCheck(url, !!user);
-        if(newRoute !== url) {
+        if (newRoute !== url) {
             router.push(newRoute);
         }
     };
@@ -38,7 +38,7 @@ export default function RouteGuard({ children }) {
     useEffect(() => {
         (async () => {
             await afterComplete(router.asPath);
-        })()
+        })();
 
         router.events.on('routeChangeStart', beforeStart);
 

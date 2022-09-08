@@ -27,13 +27,7 @@ export default function Header({isSticky, sideMenuOpen}) {
                     <div className="col-12 col-lg-2 d-flex justify-content-between align-items-center">
                         <Link passHref href="/" className="header__link-top">
                             <a>
-                                <Image
-                                    className="header__logo"
-                                    src="/logo.png"
-                                    alt="logo"
-                                    height={32}
-                                    width={32}
-                                />
+                                <Image className="header__logo" src="/logo.png" alt="logo" height={32} width={32} />
                             </a>
                         </Link>
                         <button onClick={sideMenuOpen} className="header__menu menu-toggle">

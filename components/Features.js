@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import LinkWithAuth from './LinkWithAuth';
 
-function Features({ stickyHeaderRef, className, id }) {
+function Features({stickyHeaderRef, className, id}) {
     return (
         <section ref={stickyHeaderRef} className={className} id={id}>
             <div className="container-fluid features__container">
@@ -17,9 +17,9 @@ function Features({ stickyHeaderRef, className, id }) {
                             <div className="features__icon" />
                             <h3 className="features__title">Vestibulum</h3>
                             <p className="features__text">
-                                Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                                Curabitur sollicitudin purus ut ornare finibus.
-                                Aliquam quis rhoncus odio. Phasellus vehicula magna quam, nec egestas quam venenatis eu.
+                                Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sollicitudin
+                                purus ut ornare finibus. Aliquam quis rhoncus odio. Phasellus vehicula magna quam, nec
+                                egestas quam venenatis eu.
                             </p>
                         </div>
                     </div>
@@ -37,7 +37,8 @@ function Features({ stickyHeaderRef, className, id }) {
                             <div className="features__icon" />
                             <h3 className="features__title">Donec</h3>
                             <p className="features__text">
-                                Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sollicitudin purus ut ornare finibus.
+                                Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sollicitudin
+                                purus ut ornare finibus.
                             </p>
                         </div>
                     </div>
@@ -48,16 +49,17 @@ function Features({ stickyHeaderRef, className, id }) {
                     <div className="row">
                         <div className="col-12 col-lg-6 col-sm-6">
                             <div className="pros__item d-flex justify-content-center justify-content-lg-start">
-                                <h2 className="pros__title">Nullam dolor libero, luctus a blandit vehicula, mattis nec ipsum.</h2>
+                                <h2 className="pros__title">
+                                    Nullam dolor libero, luctus a blandit vehicula, mattis nec ipsum.
+                                </h2>
 
                                 <p className="pros__text">
-                                    Fusce vel mollis nunc, ac faucibus mi. Nunc turpis tortor, congue eu finibus eu, ultricies ac diam.
+                                    Fusce vel mollis nunc, ac faucibus mi. Nunc turpis tortor, congue eu finibus eu,
+                                    ultricies ac diam.
                                 </p>
 
                                 <LinkWithAuth>
-                                    <a className="pros__button action-button action-button__join">
-                                        Nunc sodales
-                                    </a>
+                                    <a className="pros__button action-button action-button__join">Nunc sodales</a>
                                 </LinkWithAuth>
                             </div>
                         </div>
@@ -76,12 +78,13 @@ function Features({ stickyHeaderRef, className, id }) {
                             <div className="pros__inner">
                                 <div className="pros__item d-flex justify-content-center justify-content-lg-start">
                                     <h2 className="pros__title">
-                                        Maecenas non viverra odio. Vestibulum aliquet tellus dui, at vulputate erat ornare
+                                        Maecenas non viverra odio. Vestibulum aliquet tellus dui, at vulputate erat
+                                        ornare
                                     </h2>
                                     <p className="pros__text">
-                                        Phasellus maximus id turpis quis hendrerit.
-                                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-                                        Suspendisse sed leo porttitor leo imperdiet sollicitudin.
+                                        Phasellus maximus id turpis quis hendrerit. Vestibulum ante ipsum primis in
+                                        faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sed leo
+                                        porttitor leo imperdiet sollicitudin.
                                     </p>
 
                                     <LinkWithAuth>

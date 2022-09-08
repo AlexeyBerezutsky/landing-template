@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-function Customers({ className }) {
+function Customers({className}) {
     return (
         <section className={className}>
             <div className="container-fluid customers__container">
