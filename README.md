@@ -1,3 +1,7 @@
+# Landing page example
+
+[PREVIEW](https://landing-template-teal.vercel.app/)
+
 ***Based on***
 
 https://reactjs.org/
@@ -11,18 +15,34 @@ https://sass-lang.com/
 Node v14 and higher
 optional: http-server 
 
-**Development**
+## Development
 
-npm ci - install all dependencies 
+```sh
+npm ci && npm run dev
+```
 
-npm run dev - development
+## Production
 
-**Production**
+Build optimized production bundle 
 
-npm run build - build optimized production bundle 
+```sh
+npm run build 
+```
 
-npm run export - export bundle to static html (see out folder)
+Export bundle to static html (see out folder)
+ 
+```sh
+npm run export
+```
 
-npm run export-local - build prod version for local tests
+Build prod version for local tests (see out folder)
 
-npm run start-static - run prod version emulation on local static server
+```sh
+npm run export-local
+```
+
+Run prod version emulation on local static server
+
+```sh
+npm run start-static
+```
