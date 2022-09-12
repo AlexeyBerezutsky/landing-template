@@ -15,6 +15,12 @@ https://sass-lang.com/
 Node v14 and higher
 optional: http-server 
 
+## Features
+
+- responsive design
+- next.js support
+- auth guard
+
 ## Development
 
 ```sh
