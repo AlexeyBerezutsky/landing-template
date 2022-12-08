@@ -37,7 +37,7 @@ export default function Footer() {
                         <nav className="footer__navigation">
                             <ul className="footer__navigation-list">
                                 <li className="footer__navigation-item footer__navigation-item--active">
-                                    <Link passHref href="/privacy-policy">
+                                    <Link passHref href="/PrivacyPolicy">
                                         <a className="footer__navigation-link">Privacy policy</a>
                                     </Link>
                                 </li>

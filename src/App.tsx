@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from "react-router";
+import React from "react";
+import Welcome from "./source/pages/welcome";
+import { Main } from "./pages/Main";
+import { Wrap } from "./pages/Wrap";
+import About from "./source/pages/about";
+import PrivacyPolicy from "./source/pages/privacy-policy";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <header>
+                <title>Title</title>
+            </header>
+
+            <Routes>
+                <Route path="/" element={<Wrap/>}>
+                    <Route index element={<Main/>}/>
+                    <Route path="about" element={<About/>}/>
+                    <Route path="privacy-policy" element={<PrivacyPolicy/>}/>
+                    <Route path="welcome" element={<Welcome/>}/>
+                </Route>
+            </Routes>
+        </div>
+    );
 }
 
 export default App;
