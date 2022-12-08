@@ -42,7 +42,7 @@ export default function Footer() {
                                     </Link>
                                 </li>
                                 <li className="footer__navigation-item">
-                                    <Link passHref href="/about">
+                                    <Link passHref href="/About">
                                         <a className="footer__navigation-link">about</a>
                                     </Link>
                                 </li>
