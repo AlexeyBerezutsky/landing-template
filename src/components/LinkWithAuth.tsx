@@ -10,7 +10,7 @@ export default function LinkWithAuth({children}: PropsWithChildren) {
         <a href={'/welcome'}>
             <div
                 onClick={() => {
-                    !user ? setUser({name: 'Alexey'}) : signout();
+                    !user ? setUser('Alexey') : signout();
                 }}
             >
                 {children}

@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function About() {
     return (
         <main className="content inner-page">
@@ -16,7 +14,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <Image
+            <img
                 className="inner-page__banner"
                 loading="lazy"
                 width={1024}

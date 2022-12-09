@@ -1,9 +1,9 @@
 import {business, features, portfolio, jobs, team} from './navigation';
-import NavItem from "./NavItem";
 import LinkWithAuth from "./LinkWithAuth";
+import { NavItem } from "./NavItem";
 
 type Props = {
-    user: string,
+    user: {name: string},
     pathname: string,
     isBig: boolean
 }

@@ -1,13 +1,14 @@
 import React from 'react';
 import LinkWithAuth from './LinkWithAuth';
 import useScrolledTo from "../hooks/useScrolledTo";
+import { features } from "./navigation";
 
-export function Features({className, id}: Element) {
+export function Features() {
     // this hould be set outside
     const {element} = useScrolledTo();
 
     return (
-        <section ref={element} className={className} id={id}>
+        <section ref={element} className="features" id={features.id}>
             <div className="container-fluid features__container">
                 <div className="row">
                     <div className="col-12">

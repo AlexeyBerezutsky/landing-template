@@ -1,12 +1,12 @@
-import Nav from './Nav';
-import {useRouter} from 'next/router';
 import {useAuth} from '../hooks/useAuth';
 import {useBigDevice} from '../hooks/MediaQueries';
+import { useLocation } from "react-router";
+import { Nav } from "./Nav";
 
-type Props = {onClose: ()=>{}};
+type Props = {onClose: ()=>void};
 
 export default function SideMenu({onClose}:  Props) {
-    const {pathname} = useRouter();
+    const {pathname} = useLocation();
     const {user} = useAuth();
     const isBig = useBigDevice();
 

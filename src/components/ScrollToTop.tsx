@@ -7,7 +7,7 @@ export default function ScrollToTop({scrollTopVisible}: {scrollTopVisible: boole
     }
 
     function handleClick() {
-        window.scrollTo(top);
+        // window.scrollTo(top);
     }
 
     return (

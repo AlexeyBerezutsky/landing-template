@@ -4,8 +4,8 @@ import React from "react";
 import { Main } from "./pages/Main";
 import { Wrap } from "./pages/Wrap";
 import About from "./pages/About";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Welcome from "./pages/Welcome";
+import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+import { Welcome } from "./pages/Welcome";
 
 function App() {
     return (

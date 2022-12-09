@@ -63,11 +63,9 @@ export default function Footer() {
                                     </a>
                             </li>
                             <li className="socials__item">
-                                <Link passHref href="https://twitter.com/test?lang=en">
-                                    <a className="socials__link">
-                                        <Image src="/img/twitter.svg" alt="twitter" height={24} width={24} />
+                                    <a className="socials__link" href="https://twitter.com/test?lang=en">
+                                        <img src="/img/twitter.svg" alt="twitter" height={24} width={24}/>
                                     </a>
-                                </Link>
                             </li>
                         </ul>
                     </div>

@@ -1,6 +1,4 @@
-import Link from 'next/link';
-
-export default function PrivacyPolicy() {
+export function PrivacyPolicy() {
     return (
         <main className="content inner-page">
             <div className="container-fluid inner-page__container">
@@ -40,9 +38,7 @@ export default function PrivacyPolicy() {
                             Aliquam a ligula ut felis rutrum ornare.
                             <br />
                             Email:{' '}
-                            <Link href="mailto:test@test.com" passHref>
-                                <a className="address__mail inner-page__mail-address">test@test.com</a>
-                            </Link>
+                                <a href="mailto:test@test.com" className="address__mail inner-page__mail-address">test@test.com</a>
                         </address>
                     </div>
                 </div>

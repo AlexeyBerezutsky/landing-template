@@ -26,7 +26,7 @@ export default function Layout({children}: PropsWithChildren) {
             <Footer />
             {isSmallDevice && sideMenuOpen && (
                 <SideMenu
-                    close={() => {
+                    onClose={() => {
                         setSideMenuOpen(false);
                     }}
                 />

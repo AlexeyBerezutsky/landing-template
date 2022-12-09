@@ -1,6 +1,8 @@
-export function Business({className, id}: Element) {
+import { business } from "./navigation";
+
+export function Business() {
     return (
-        <section className={className} id={id}>
+        <section className="business" id={business.id}>
             <div className="container-fluid business__container">
                 <div className="row">
                     <div className="col-12 d-flex justify-content-center">

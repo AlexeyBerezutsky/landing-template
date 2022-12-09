@@ -1,9 +1,9 @@
 import React from 'react';
 import { IntroImage } from "./IntroImage";
 
-export function Intro({className}: Element) {
+export function Intro() {
     return (
-        <section className={className}>
+        <section className={"intro"}>
             <div className="intro__filter-layer intro__filter-layer--1"></div>
             <div className="intro__filter-layer intro__filter-layer--2"></div>
             {/* <video className="intro__video" autoPlay loop muted preload="auto" poster="/img/poster.jpg">

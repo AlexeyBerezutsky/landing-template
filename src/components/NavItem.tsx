@@ -12,7 +12,8 @@ export function NavItem({menuItem}: { menuItem: MenuItem }) {
     }
 
     // scroll callback function which decides what element is currently active depending on current scroll position
-    function navHighlighter() {
+    function navHighlighter( element: HTMLElement|null) {
+        if(!element) {return;}
         const [sectionStartpoint, sectionEndpoint] = getSectionCoordinates(element);
         //Get current scroll position
         let currentPosition = Math.ceil(window.scrollY);
@@ -27,7 +28,7 @@ export function NavItem({menuItem}: { menuItem: MenuItem }) {
     // window.history.pushState  is used to prevent unnecessary page scrolling to anchor
     useEffect(() => {
         if (active) {
-            window.history.pushState(null, null, menuItem.hash);
+            window.history.pushState(null, '', menuItem.hash);
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [active]);
@@ -35,12 +36,13 @@ export function NavItem({menuItem}: { menuItem: MenuItem }) {
     // subscribe to scroll event on component mount, calculating section beggining and end points
     useEffect(() => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
-        element = document.getElementById(menuItem.id);
+        const element = document.getElementById(menuItem.id);
+        const tmp = ()=>navHighlighter(element);
         if (element) {
-            window.addEventListener('scroll', navHighlighter);
+            window.addEventListener('scroll', tmp);
         }
         return () => {
-            window.removeEventListener('scroll', navHighlighter);
+            window.removeEventListener('scroll', tmp);
         };
     }, []);
 
@@ -50,7 +52,8 @@ export function NavItem({menuItem}: { menuItem: MenuItem }) {
         if (currentPathname === root) {
             const hash = window.location.hash;
             if (hash && hash.includes(menuItem.id)) {
-                document.querySelector('#' + menuItem.id).scrollIntoView({behavior: 'smooth'});
+                const element = document.querySelector('#' + menuItem.id);
+                element?.scrollIntoView({behavior: 'smooth'});
             }
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps

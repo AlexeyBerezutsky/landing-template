@@ -1,8 +1,9 @@
 import React from 'react';
+import { portfolio } from "./navigation";
 
-export function Portfolio({className, id}: Element) {
+export function Portfolio() {
     return (
-        <section className={className} id={id}>
+        <section className="portfolio" id={portfolio.id}>
             <div className="container-fluid portfolio__container">
                 <div className="row">
                     <div className="col-12">

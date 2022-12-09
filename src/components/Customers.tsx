@@ -1,6 +1,6 @@
-export function Customers({className}: Element) {
+export function Customers() {
     return (
-        <section className={className}>
+        <section className="customers">
             <div className="container-fluid customers__container">
                 <div className="row">
                     <div className="col-12">

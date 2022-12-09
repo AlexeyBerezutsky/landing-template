@@ -1,8 +1,9 @@
 import React from 'react';
+import { jobs } from "./navigation";
 
-export function Careers({className, id}: Element) {
+export function Careers() {
     return (
-        <section className={className} id={id}>
+        <section className="jobs" id={jobs.id}>
             <div className="container-fluid jobs__container">
                 <div className="row">
                     <div

@@ -3,14 +3,21 @@ import useLocalStorage from './useLocalStorage';
 
 const userKey = 'user';
 
+const noop = () => {
+};
 type Auth = {
-    user: string,
+    user: {name: string},
     setUser: (name: string) => void,
     remove: () => void,
     signout: () => void
-} | {};
+};
 
-const authContext = createContext<Auth>({});
+const authContext = createContext<Auth>({
+    user: {name: ""},
+    setUser: noop,
+    remove: noop,
+    signout: noop,
+});
 
 export function ProvideAuth({children}: PropsWithChildren) {
     const auth = useProvideAuth();

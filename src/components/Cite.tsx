@@ -1,8 +1,8 @@
 import React from 'react';
 
-export function Cite({className}: Element) {
+export function Cite() {
     return (
-        <section className={className}>
+        <section className="cite">
             <div className="container-fluid cite__container">
                 <div className="row d-flex justify-content-center">
                     <div className="col-12 col-sm-8 col-lg-8 col-12 col-lg-8 d-flex justify-content-center">

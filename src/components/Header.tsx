@@ -1,8 +1,8 @@
-import Nav from './Nav';
 import LinkWithAuth from './LinkWithAuth';
 import {useAuth} from '../hooks/useAuth';
 import {useBigDevice} from '../hooks/MediaQueries';
 import { useLocation } from "react-router";
+import { Nav } from "./Nav";
 
 type Props = {
     isSticky: boolean;

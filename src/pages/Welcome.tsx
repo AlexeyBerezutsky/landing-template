@@ -1,7 +1,6 @@
 import {useAuth} from '../hooks/useAuth';
-import Image from 'next/image';
 
-export default function Welcome() {
+export function Welcome() {
     const {user} = useAuth();
     const nameChunk = user?.name ? `, ${user.name}!` : '';
     return (
@@ -15,7 +14,7 @@ export default function Welcome() {
                             Aliquam a ligula ut felis rutrum ornare. Duis tincidunt nisi in nisl interdum venenatis.
                             Aliquam mollis sem eu quam molestie, sed pellentesque libero tincidunt.
                         </p>
-                        <Image
+                        <img
                             src="https://via.placeholder.com/928x370.png"
                             alt="welcome-illustration"
                             width={928}

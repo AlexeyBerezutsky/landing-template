@@ -1,7 +1,9 @@
 import {Switch} from './Switch';
 import {useState} from 'react';
 import employees from './employees.json';
-import {filter, map} from 'lodash';
+import { team as teamNav } from "./navigation";
+import { filter, map } from "lodash";
+import { Tooltip } from 'react-tooltip';
 
 const dev = 'development';
 const biz = 'business';
@@ -34,10 +36,10 @@ const withPhoto = (employee: Employee) => {
 const Business = map(filter(employees, {department: biz}), withPhoto);
 const Devs = map(filter(employees, {department: dev}), withPhoto);
 
-export default function Team({className, id}: Element) {
+export default function Team() {
     const [team, setTeam] = useState(biz);
     return (
-        <section className={className} id={id}>
+        <section className="team" id={teamNav.id}>
             <div className="container-fluid team__container">
                 <div className="row">
                     <div className="col-12">
@@ -53,7 +55,7 @@ export default function Team({className, id}: Element) {
                         </Switch>
                     </div>
                 </div>
-                {/*<ReactTooltip className="employee-info__tooltip" place="bottom" effect="solid" />*/}
+                <Tooltip className="employee-info__tooltip" place="bottom" />
             </div>
         </section>
     );

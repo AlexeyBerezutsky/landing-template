@@ -18,7 +18,7 @@ const routeCheck = (url: string, isLoggein: boolean) => {
 };
 
 export function RouteGuard({children}: PropsWithChildren) {
-    const {user} = useAuth();
+    // const {user} = useAuth();
     const navigate = useNavigate();
     const location = useLocation();
     const [hide, setHide] = useState(true);
@@ -27,14 +27,14 @@ export function RouteGuard({children}: PropsWithChildren) {
         setHide(true);
     };
 
-    const afterComplete = async (url: string) => {
-        setHide(false);
-
-        const newRoute = routeCheck(url, !!user);
-        if (newRoute !== url) {
-            navigate(newRoute);
-        }
-    };
+    // const afterComplete = async (url: string) => {
+    //     setHide(false);
+    //
+    //     const newRoute = routeCheck(url, !!user);
+    //     if (newRoute !== url) {
+    //         navigate(newRoute);
+    //     }
+    // };
 
     //TODO: how to make route guard?
 
