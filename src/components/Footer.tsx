@@ -35,10 +35,10 @@ export default function Footer() {
                         <nav className="footer__navigation">
                             <ul className="footer__navigation-list">
                                 <li className="footer__navigation-item footer__navigation-item--active">
-                                    <a href="/PrivacyPolicy" className="footer__navigation-link">Privacy policy</a>
+                                    <a href="/privacy-policy" className="footer__navigation-link">Privacy policy</a>
                                 </li>
                                 <li className="footer__navigation-item">
-                                    <a href="/About" className="footer__navigation-link">about</a>
+                                    <a href="/about" className="footer__navigation-link">about</a>
                                 </li>
                                 <li className="footer__navigation-item">
                                     <a href="" className="footer__navigation-link">Careers</a>

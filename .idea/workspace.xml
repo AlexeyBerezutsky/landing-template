@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="145d0bc9-98f7-4fc3-b108-8193c24f9984" name="Changes" comment="refactoring WIP" />
+    <list default="true" id="145d0bc9-98f7-4fc3-b108-8193c24f9984" name="Changes" comment="temporary fix for images">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,6 +79,7 @@
     <MESSAGE value="initial layout WIP" />
     <MESSAGE value="small fixes" />
     <MESSAGE value="refactoring WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring WIP" />
+    <MESSAGE value="temporary fix for images" />
+    <option name="LAST_COMMIT_MESSAGE" value="temporary fix for images" />
   </component>
 </project>
