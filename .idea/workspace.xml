@@ -4,42 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="145d0bc9-98f7-4fc3-b108-8193c24f9984" name="Changes" comment="removed next js and added typescript">
-      <change afterPath="$PROJECT_DIR$/src/components/Business.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Careers.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cite.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Customers.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Features.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Intro.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/IntroImage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LinkWithAuth.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Nav.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NavItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Portfolio.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RouteGuard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ScrollToTop.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SideMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Switch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Team.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/employees.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navigation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/MediaQueries.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useAuth.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useLocalStorage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useScrollTop.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useScrolledTo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/About.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/PrivacyPolicy.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Welcome.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Wrap.tsx" afterDir="false" />
+    <list default="true" id="145d0bc9-98f7-4fc3-b108-8193c24f9984" name="Changes" comment="small fixes">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,30 +37,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/playground/landos/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\playground\\landos\\node_modules\\prettier",
-    "ts.external.directory.path": "C:\\playground\\landos\\node_modules\\typescript\\lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/playground/landos/src/pages&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\playground\\landos\\node_modules\\prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\playground\\landos\\node_modules\\typescript\\lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\playground\landos\src" />
       <recent name="C:\playground\landos\src\pages" />
+      <recent name="C:\playground\landos\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\playground\landos\src" />
+      <recent name="C:\playground\landos\public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/pages/welcome.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -106,6 +85,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated  gitignore" />
     <MESSAGE value="removed next js and added typescript" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed next js and added typescript" />
+    <MESSAGE value="initial layout WIP" />
+    <MESSAGE value="small fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="small fixes" />
   </component>
 </project>
