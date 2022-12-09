@@ -1,6 +1,4 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import {useAuth} from '../hooks/useAuth';
+import { useAuth } from '../hooks/useAuth';
 import LinkWithAuth from './LinkWithAuth';
 
 export default function Footer() {
@@ -31,25 +29,19 @@ export default function Footer() {
             <div className="container-fluid footer__container">
                 <div className="row footer__top-row">
                     <div className="col-sm-12 col-lg-3">
-                        <Image className="footer__logo" src="/logo.png" alt="logo" width={64} height={64} />
+                        <img className="footer__logo" src="/logo.png" alt="logo" width={64} height={64}/>
                     </div>
                     <div className="col-sm-12 col-lg-9">
                         <nav className="footer__navigation">
                             <ul className="footer__navigation-list">
                                 <li className="footer__navigation-item footer__navigation-item--active">
-                                    <Link passHref href="/PrivacyPolicy">
-                                        <a className="footer__navigation-link">Privacy policy</a>
-                                    </Link>
+                                    <a href="/PrivacyPolicy" className="footer__navigation-link">Privacy policy</a>
                                 </li>
                                 <li className="footer__navigation-item">
-                                    <Link passHref href="/About">
-                                        <a className="footer__navigation-link">about</a>
-                                    </Link>
+                                    <a href="/About" className="footer__navigation-link">about</a>
                                 </li>
                                 <li className="footer__navigation-item">
-                                    <Link passHref href="">
-                                        <a className="footer__navigation-link">Careers</a>
-                                    </Link>
+                                    <a href="" className="footer__navigation-link">Careers</a>
                                 </li>
                             </ul>
                         </nav>
@@ -60,19 +52,15 @@ export default function Footer() {
                         <address className="address">
                             Nunc sodales ullamcorper 1 1001 Lectus
                             <span className="address__divider"> / </span>
-                            <Link passHref href="mailto:test@test.com">
-                                <a className="address__mail">test@test.com</a>
-                            </Link>
+                            <a href="mailto:test@test.com" className="address__mail">test@test.com</a>
                         </address>
                     </div>
                     <div className="col-sm-12 col-lg-4">
                         <ul className="socials">
                             <li className="socials__item">
-                                <Link passHref href="https://linkedin.com/company/test">
-                                    <a className="socials__link">
-                                        <Image src="/img/linkedin.svg" alt="linkedin" height={24} width={24} />
+                                    <a className="socials__link" href="https://linkedin.com/company/test">
+                                        <img src="/img/linkedin.svg" alt="linkedin" height={24} width={24} />
                                     </a>
-                                </Link>
                             </li>
                             <li className="socials__item">
                                 <Link passHref href="https://twitter.com/test?lang=en">

@@ -1,13 +1,13 @@
 import {useAuth} from '../hooks/useAuth';
-import Link from 'next/link';
+import { PropsWithChildren } from "react";
 
-export default function LinkWithAuth({children}) {
+export default function LinkWithAuth({children}: PropsWithChildren) {
     const {user, setUser, signout} = useAuth();
 
     // const href = user ? '/welcome' : process.env.NEXT_PUBLIC_AUTH;
 
     return (
-        <Link passHref href={'/welcome'}>
+        <a href={'/welcome'}>
             <div
                 onClick={() => {
                     !user ? setUser({name: 'Alexey'}) : signout();
@@ -15,6 +15,6 @@ export default function LinkWithAuth({children}) {
             >
                 {children}
             </div>
-        </Link>
+        </a>
     );
 }

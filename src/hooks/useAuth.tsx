@@ -1,20 +1,27 @@
-import React, {useContext, createContext} from 'react';
+import React, { createContext, PropsWithChildren, useContext } from 'react';
 import useLocalStorage from './useLocalStorage';
 
 const userKey = 'user';
 
-const authContext = createContext();
+type Auth = {
+    user: string,
+    setUser: (name: string) => void,
+    remove: () => void,
+    signout: () => void
+} | {};
 
-export function ProvideAuth({children}) {
+const authContext = createContext<Auth>({});
+
+export function ProvideAuth({children}: PropsWithChildren) {
     const auth = useProvideAuth();
     return <authContext.Provider value={auth}>{children}</authContext.Provider>;
 }
 
 export const useAuth = () => {
-    return useContext(authContext);
+    return useContext<Auth>(authContext);
 };
 
-function useProvideAuth() {
+function useProvideAuth(): Auth {
     const [user, setUser, remove] = useLocalStorage(userKey, null);
 
     const signout = () => {

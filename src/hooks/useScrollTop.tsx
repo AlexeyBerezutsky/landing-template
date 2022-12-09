@@ -4,7 +4,9 @@ function useScrollTop() {
     const [scrollTopVisible, setVisibility] = useState(false);
 
     const handleScroll = () => {
-        setVisibility(window.scrollY >= parseInt(innerHeight) / 2);
+        // setVisibility(
+        //     window.scrollY >= parseInt(innerHeight) / 2
+        // );
     };
 
     useEffect(() => {

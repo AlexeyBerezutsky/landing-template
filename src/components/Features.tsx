@@ -1,10 +1,13 @@
-import Image from 'next/image';
 import React from 'react';
 import LinkWithAuth from './LinkWithAuth';
+import useScrolledTo from "../hooks/useScrolledTo";
 
-function Features({stickyHeaderRef, className, id}) {
+export function Features({className, id}: Element) {
+    // this hould be set outside
+    const {element} = useScrolledTo();
+
     return (
-        <section ref={stickyHeaderRef} className={className} id={id}>
+        <section ref={element} className={className} id={id}>
             <div className="container-fluid features__container">
                 <div className="row">
                     <div className="col-12">
@@ -64,7 +67,7 @@ function Features({stickyHeaderRef, className, id}) {
                             </div>
                         </div>
                         <div className="col-12 col-lg-6 col-sm-6 d-flex justify-content-center justify-content-lg-end">
-                            <Image
+                            <img
                                 className="pros__image"
                                 src="https://via.placeholder.com/449x336.png"
                                 alt="illustration"
@@ -96,7 +99,7 @@ function Features({stickyHeaderRef, className, id}) {
                             </div>
                         </div>
                         <div className="col-12 col-sm-6 col-lg-6 d-flex d-lg-flex justify-content-center justify-content-lg-start">
-                            <Image
+                            <img
                                 className="pros__image"
                                 src="https://via.placeholder.com/448x364.png"
                                 alt="illustration"
@@ -110,5 +113,3 @@ function Features({stickyHeaderRef, className, id}) {
         </section>
     );
 }
-
-export default Features;

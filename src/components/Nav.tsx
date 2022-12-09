@@ -1,8 +1,14 @@
 import {business, features, portfolio, jobs, team} from './navigation';
-import NavItem from './NavItem';
-import LinkWithAuth from './LinkWithAuth';
+import NavItem from "./NavItem";
+import LinkWithAuth from "./LinkWithAuth";
 
-export default function Nav({user, pathname, isBig}) {
+type Props = {
+    user: string,
+    pathname: string,
+    isBig: boolean
+}
+
+export function Nav({user, pathname, isBig}: Props) {
     return (
         <nav className="header__navigation">
             <ul className="header__navigation-list">

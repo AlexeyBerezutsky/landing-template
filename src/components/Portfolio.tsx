@@ -1,7 +1,6 @@
-import Image from 'next/image';
 import React from 'react';
 
-function Portfolio({className, id}) {
+export function Portfolio({className, id}: Element) {
     return (
         <section className={className} id={id}>
             <div className="container-fluid portfolio__container">
@@ -10,7 +9,7 @@ function Portfolio({className, id}) {
                         <h2 className="portfolio__title">Portfolio</h2>
                         <ul className="portfolio__list">
                             <li className="portfolio__item">
-                                <Image
+                                <img
                                     className="portfolio__image"
                                     src="https://via.placeholder.com/448x300.png"
                                     alt="Aliquam picture"
@@ -30,7 +29,7 @@ function Portfolio({className, id}) {
                             </li>
 
                             <li className="portfolio__item">
-                                <Image
+                                <img
                                     className="portfolio__image"
                                     src="https://via.placeholder.com/448x300.png"
                                     alt="Bam picture"
@@ -51,7 +50,7 @@ function Portfolio({className, id}) {
                             </li>
 
                             <li className="portfolio__item">
-                                <Image
+                                <img
                                     className="portfolio__image"
                                     src="https://via.placeholder.com/448x300.png"
                                     alt="Bam picture"
@@ -67,7 +66,7 @@ function Portfolio({className, id}) {
                             </li>
 
                             <li className="portfolio__item">
-                                <Image
+                                <img
                                     className="portfolio__image"
                                     src="https://via.placeholder.com/448x300.png"
                                     alt="libero picture"
@@ -88,5 +87,3 @@ function Portfolio({className, id}) {
         </section>
     );
 }
-
-export default Portfolio;

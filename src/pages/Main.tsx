@@ -1,18 +1,18 @@
 import {business, features, jobs, team, portfolio} from '../components/navigation';
-import Team from '../components/Team';
-import Intro from '../components/Intro';
-import Features from '../components/Features';
-import Business from '../components/Business';
-import Portfolio from '../components/Portfolio';
-import Careers from '../components/Careers';
-import Customers from '../components/Customers';
-import Cite from '../components/Cite';
+import { Intro } from "../components/Intro";
+import { Features } from "../components/Features";
+import { Business } from "../components/Business";
+import { Portfolio } from "../components/Portfolio";
+import Team from "../components/Team";
+import { Careers } from "../components/Careers";
+import Customers from "../components/Customers";
+import { Cite } from "../components/Cite";
 
-export function Main({stickyHeaderRef}) {
+export function Main() {
     return (
         <main className="content">
             <Intro className="intro" />
-            <Features stickyHeaderRef={stickyHeaderRef} className="features" id={features.id} />
+            <Features className="features" id={features.id} />
             <Business className="business" id={business.id} />
             <Portfolio className="portfolio" id={portfolio.id} />
             <Team className="team" id={team.id} />

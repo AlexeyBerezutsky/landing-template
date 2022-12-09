@@ -1,9 +1,15 @@
-import {useState} from 'react';
+import { PropsWithChildren, useState } from 'react';
 
-export function Switch({children, left, right, onChange}) {
+type Props = {
+    left: string,
+    right: string,
+    onChange: (side: string) => void
+}
+
+export function Switch({children, left, right, onChange}: PropsWithChildren<Props>) {
     const [side, setSide] = useState(left);
 
-    const handleSide = (side) => {
+    const handleSide = (side: string) => {
         setSide(side);
         onChange(side);
     };

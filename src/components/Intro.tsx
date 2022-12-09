@@ -1,7 +1,7 @@
 import React from 'react';
-import IntroImage from './IntroImage';
+import { IntroImage } from "./IntroImage";
 
-function Intro({className}) {
+export function Intro({className}: Element) {
     return (
         <section className={className}>
             <div className="intro__filter-layer intro__filter-layer--1"></div>
@@ -31,5 +31,3 @@ function Intro({className}) {
         </section>
     );
 }
-
-export default Intro;

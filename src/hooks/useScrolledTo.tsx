@@ -6,7 +6,7 @@ function useScrolledTo() {
 
     const handleScroll = () => {
         if (element.current) {
-            setReached(Math.ceil(window.scrollY) >= Math.floor(element.current.offsetTop));
+            // setReached(Math.ceil(window.scrollY) >= Math.floor(element.current.offsetTop));
         }
     };
 

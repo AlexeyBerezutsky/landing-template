@@ -1,20 +1,26 @@
 import {Switch} from './Switch';
 import {useState} from 'react';
-import employees from './employees';
+import employees from './employees.json';
 import {filter, map} from 'lodash';
-import ReactTooltip from 'react-tooltip';
-import Image from 'next/image';
 
 const dev = 'development';
 const biz = 'business';
 
-const withPhoto = (employee) => {
+type Department = 'development'|'business';
+
+type Employee ={
+    name: string;
+    photo: string;
+    department: Department;
+    hide: string;
+}
+
+const withPhoto = (employee: Employee) => {
     const hideName = employee.hide && employee.hide.includes('name');
 
     return (
         <div data-tip={!hideName ? employee.name : ''} key={employee.name} className="employee-info">
-            <Image
-                priority="true"
+            <img
                 className="employee-info__photo"
                 height={88}
                 width={88}
@@ -28,7 +34,7 @@ const withPhoto = (employee) => {
 const Business = map(filter(employees, {department: biz}), withPhoto);
 const Devs = map(filter(employees, {department: dev}), withPhoto);
 
-export default function Team({className, id}) {
+export default function Team({className, id}: Element) {
     const [team, setTeam] = useState(biz);
     return (
         <section className={className} id={id}>
@@ -47,7 +53,7 @@ export default function Team({className, id}) {
                         </Switch>
                     </div>
                 </div>
-                <ReactTooltip className="employee-info__tooltip" place="bottom" effect="solid" />
+                {/*<ReactTooltip className="employee-info__tooltip" place="bottom" effect="solid" />*/}
             </div>
         </section>
     );

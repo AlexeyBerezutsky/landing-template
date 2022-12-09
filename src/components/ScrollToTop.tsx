@@ -1,6 +1,5 @@
-import Image from 'next/image';
 
-export default function ScrollToTop({scrollTopVisible}) {
+export default function ScrollToTop({scrollTopVisible}: {scrollTopVisible: boolean}) {
     const classNames = ['scroll-top'];
 
     if (scrollTopVisible) {
@@ -13,7 +12,7 @@ export default function ScrollToTop({scrollTopVisible}) {
 
     return (
         <a onClick={handleClick} role="button" aria-label="Scroll to top" className={classNames.join(' ')}>
-            <Image src={'/img/chevron-top.svg'} alt="" height={48} width={48} />
+            <img src={'/img/chevron-top.svg'} alt="" height={48} width={48} />
         </a>
     );
 }

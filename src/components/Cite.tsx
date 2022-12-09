@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Cite({className}) {
+export function Cite({className}: Element) {
     return (
         <section className={className}>
             <div className="container-fluid cite__container">
@@ -26,5 +26,3 @@ function Cite({className}) {
         </section>
     );
 }
-
-export default Cite;

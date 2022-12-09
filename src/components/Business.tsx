@@ -1,7 +1,4 @@
-import Image from 'next/image';
-import React from 'react';
-
-function Business({className, id}) {
+export function Business({className, id}: Element) {
     return (
         <section className={className} id={id}>
             <div className="container-fluid business__container">
@@ -14,7 +11,7 @@ function Business({className, id}) {
                             ante, eu dapibus purus nunc nec diam. Morbi congue ut diam nec varius. Phasellus vitae erat
                             at sem tincidunt pellentesque. Donec in urna eu odio vestibulum luctus.
                         </p>
-                        <Image
+                        <img
                             className="business__image"
                             src="https://via.placeholder.com/927x555.png"
                             alt="illustration"
@@ -26,6 +23,4 @@ function Business({className, id}) {
             </div>
         </section>
     );
-}
-
-export default Business;
+};

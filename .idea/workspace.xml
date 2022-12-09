@@ -4,13 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="145d0bc9-98f7-4fc3-b108-8193c24f9984" name="Changes" comment="small fixes">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="145d0bc9-98f7-4fc3-b108-8193c24f9984" name="Changes" comment="refactoring WIP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Business.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Business.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Careers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Careers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cite.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cite.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Customers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Customers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Features.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Features.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Intro.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Intro.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/IntroImage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IntroImage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LinkWithAuth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LinkWithAuth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Portfolio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RouteGuard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RouteGuard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ScrollToTop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScrollToTop.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Switch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Switch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Team.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Team.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useAuth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useAuth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useLocalStorage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useLocalStorage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useScrollTop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useScrollTop.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useScrolledTo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useScrolledTo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +110,7 @@
     <MESSAGE value="removed next js and added typescript" />
     <MESSAGE value="initial layout WIP" />
     <MESSAGE value="small fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="small fixes" />
+    <MESSAGE value="refactoring WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring WIP" />
   </component>
 </project>

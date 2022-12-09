@@ -1,7 +1,4 @@
-import Image from 'next/image';
-import React from 'react';
-
-function Customers({className}) {
+export function Customers({className}: Element) {
     return (
         <section className={className}>
             <div className="container-fluid customers__container">
@@ -14,7 +11,7 @@ function Customers({className}) {
                     <div className="col-12">
                         <ul className="customers__list">
                             <li className="customers__item">
-                                <Image
+                                <img
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}
@@ -23,7 +20,7 @@ function Customers({className}) {
                                 />
                             </li>
                             <li className="customers__item">
-                                <Image
+                                <img
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}
@@ -32,7 +29,7 @@ function Customers({className}) {
                                 />
                             </li>
                             <li className="customers__item">
-                                <Image
+                                <img
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}
@@ -41,7 +38,7 @@ function Customers({className}) {
                                 />
                             </li>
                             <li className="customers__item">
-                                <Image
+                                <img
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}
@@ -51,7 +48,7 @@ function Customers({className}) {
                             </li>
 
                             <li className="customers__item">
-                                <Image
+                                <img
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}
@@ -60,7 +57,7 @@ function Customers({className}) {
                                 />
                             </li>
                             <li className="customers__item">
-                                <Image
+                                <img
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}
@@ -69,7 +66,7 @@ function Customers({className}) {
                                 />
                             </li>
                             <li className="customers__item">
-                                <Image
+                                <img
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}
@@ -78,7 +75,7 @@ function Customers({className}) {
                                 />
                             </li>
                             <li className="customers__item">
-                                <Image
+                                <img
                                     src="https://via.placeholder.com/128x36.png"
                                     alt="customer-logo"
                                     width={128}

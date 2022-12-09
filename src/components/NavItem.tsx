@@ -1,11 +1,10 @@
-import React, {useEffect, useState} from 'react';
-import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { MenuItem } from "./navigation";
 
-function NavItem({menuItem}) {
-    const [active, setActive] = useState();
-    let element;
+export function NavItem({menuItem}: { menuItem: MenuItem }) {
+    const [active, setActive] = useState(false);
 
-    function getSectionCoordinates(element) {
+    function getSectionCoordinates(element: HTMLElement) {
         const sectionStartpoint = Math.floor(element.getBoundingClientRect().y + window.scrollY);
         const sectionEndpoint = Math.floor(sectionStartpoint + element.getBoundingClientRect().height);
 
@@ -59,11 +58,7 @@ function NavItem({menuItem}) {
 
     return (
         <li className={`header__navigation-item ${active ? 'header__navigation-item--active' : ''}`}>
-            <Link passHref href={menuItem.url}>
-                <a className="header__navigation-link">{menuItem.title}</a>
-            </Link>
+            <a href={menuItem.url} className="header__navigation-link">{menuItem.title}</a>
         </li>
     );
 }
-
-export default NavItem;
