@@ -1,5 +1,3 @@
-import './App.css';
-import React from "react";
 import { Main } from "./pages/Main";
 import { Wrap } from "./pages/Wrap";
 import About from "./pages/About";
@@ -9,22 +7,17 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
     return (
-        <div>
-            <header>
-                <title>Title</title>
-            </header>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Wrap/>}>
-                        <Route index element={<Main/>}/>
-                        <Route path="about" element={<About/>}/>
-                        <Route path="privacy-policy" element={<PrivacyPolicy/>}/>
-                        <Route path="welcome" element={<Welcome/>}/>
-                        {/*<Route path="*" element={<NoMatch />} />*/}
-                    </Route>
-                </Routes>
-            </BrowserRouter>
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Wrap/>}>
+                    <Route index element={<Main/>}/>
+                    <Route path="about" element={<About/>}/>
+                    <Route path="privacy-policy" element={<PrivacyPolicy/>}/>
+                    <Route path="welcome" element={<Welcome/>}/>
+                    {/*<Route path="*" element={<NoMatch />} />*/}
+                </Route>
+            </Routes>
+        </BrowserRouter>
     );
 }
 
