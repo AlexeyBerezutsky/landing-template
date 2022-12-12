@@ -9,7 +9,6 @@
 
 // components (alphabetically sorted)
 @import "address";
-@import "business";
 @import "cite";
 @import "customers";
 @import "employee-info";
@@ -89,3 +88,18 @@
 }
 
 @import '~bootstrap/scss/bootstrap.scss';
+@import "~@fontsource/overpass/index.css";
+
+body {
+    margin: 0;
+    color: black;
+    font-family: "Overpass";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    position: relative;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "body" "footer";
+}
